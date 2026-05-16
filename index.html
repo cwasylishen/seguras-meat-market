@@ -702,9 +702,192 @@
       outline-offset: 3px;
     }
 
+    /* SKIP LINK */
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: var(--gold);
+      color: var(--bg-dark);
+      padding: 10px 16px;
+      font-weight: 800;
+      z-index: 200;
+      text-decoration: none;
+      border-radius: 0 0 8px 0;
+    }
+    .skip-link:focus { left: 0; top: 0; }
+
+    /* MOBILE MENU */
+    .menu-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px; height: 42px;
+      background: transparent;
+      border: 1px solid var(--border-dark);
+      border-radius: 10px;
+      color: var(--paper);
+      cursor: pointer;
+      padding: 0;
+    }
+    .menu-toggle:hover, .menu-toggle:focus-visible { border-color: var(--neon); color: var(--neon); }
+    .menu-toggle svg { width: 22px; height: 22px; }
+    .menu-toggle .icon-close { display: none; }
+    .menu-toggle[aria-expanded="true"] .icon-open { display: none; }
+    .menu-toggle[aria-expanded="true"] .icon-close { display: inline-block; }
+    @media (min-width: 768px) { .menu-toggle { display: none; } }
+
+    .mobile-panel {
+      display: none;
+      background: var(--bg-dark-2);
+      border-bottom: 1px solid var(--border-dark);
+      padding: 8px var(--pad) 16px;
+      position: sticky;
+      top: 68px;
+      z-index: 49;
+    }
+    .mobile-panel[data-open="true"] { display: block; }
+    .mobile-panel a {
+      display: block;
+      padding: 14px 4px;
+      color: var(--paper);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--border-dark);
+    }
+    .mobile-panel a:last-child { border-bottom: none; color: var(--neon); }
+    @media (min-width: 768px) { .mobile-panel { display: none !important; } }
+
+    /* WHATSAPP FLOATING BUTTON */
+    .fab-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.45), 0 4px 12px rgba(0, 0, 0, 0.25);
+      z-index: 80;
+      text-decoration: none;
+      transition: transform 0.18s ease;
+    }
+    .fab-whatsapp::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background: #25D366;
+      opacity: 0.55;
+      z-index: -1;
+      animation: fab-pulse 2.4s ease-out infinite;
+    }
+    .fab-whatsapp:hover, .fab-whatsapp:focus-visible {
+      transform: scale(1.08);
+      outline: 3px solid var(--gold);
+      outline-offset: 3px;
+    }
+    .fab-whatsapp svg { width: 32px; height: 32px; }
+    .fab-label {
+      position: absolute;
+      right: calc(100% + 12px);
+      top: 50%;
+      transform: translateY(-50%);
+      background: var(--bg-dark);
+      color: var(--paper);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 8px 14px;
+      border-radius: 8px;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    }
+    .fab-whatsapp:hover .fab-label, .fab-whatsapp:focus-visible .fab-label { opacity: 1; }
+    @media (max-width: 540px) {
+      .fab-whatsapp { width: 56px; height: 56px; bottom: 16px; right: 16px; }
+      .fab-whatsapp svg { width: 28px; height: 28px; }
+      .fab-label { display: none; }
+    }
+    @keyframes fab-pulse {
+      0%   { transform: scale(1);   opacity: 0.5; }
+      100% { transform: scale(1.7); opacity: 0;   }
+    }
+
+    /* LIVE OPEN/CLOSED STATUS */
+    .live-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 12px;
+      margin-bottom: 14px;
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      border-radius: 999px;
+    }
+    .live-status.open   { background: rgba(37, 211, 102, 0.18); color: #5BE08C; }
+    .live-status.closed { background: rgba(255, 46, 110, 0.14); color: var(--neon); }
+    .live-status .pulse {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: currentColor;
+      animation: status-pulse 2s ease-out infinite;
+    }
+    @keyframes status-pulse {
+      0%   { box-shadow: 0 0 0 0   currentColor; }
+      100% { box-shadow: 0 0 0 9px transparent;  }
+    }
+
+    /* FEATURED-IN STRIP */
+    .featured-strip {
+      background: var(--bg-cream);
+      padding: 28px 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .featured-strip .inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 14px 28px;
+      text-align: center;
+    }
+    .featured-strip .label {
+      font-family: "Helvetica Neue", "Arial Black", Impact, sans-serif;
+      font-weight: 800;
+      font-size: 0.76rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+    }
+    .featured-strip a {
+      font-size: 0.94rem;
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 700;
+      border-bottom: 2px dotted var(--paper-muted);
+      padding-bottom: 2px;
+    }
+    .featured-strip a:hover, .featured-strip a:focus-visible {
+      color: var(--oxblood);
+      border-color: var(--oxblood);
+    }
+
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
-      * { transition: none !important; }
+      *, *::before, *::after { transition: none !important; animation: none !important; }
     }
   </style>
 
@@ -792,6 +975,8 @@
 </head>
 <body>
 
+<a class="skip-link" href="#top">Skip to content</a>
+
 <header class="site-header">
   <div class="container inner">
     <a href="#top" class="brand-link" aria-label="Seguras Meat Market home">
@@ -804,8 +989,35 @@
       <a href="#visit">Visit</a>
     </nav>
     <a href="#visit" class="nav-cta">Order or Visit</a>
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel">
+      <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <path d="M3 6h18M3 12h18M3 18h18"/>
+      </svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <path d="M6 6l12 12M18 6L6 18"/>
+      </svg>
+    </button>
   </div>
 </header>
+
+<nav id="mobilePanel" class="mobile-panel" aria-label="Mobile navigation" data-open="false">
+  <a href="#about">About</a>
+  <a href="#products">The Case</a>
+  <a href="#delivery">Delivery</a>
+  <a href="#visit">Visit</a>
+  <a href="#faq">FAQ</a>
+  <a href="https://wa.me/50685849777" target="_blank" rel="noopener">WhatsApp Us</a>
+</nav>
+
+<aside class="featured-strip" aria-label="Featured in">
+  <div class="container inner">
+    <span class="label">As featured by</span>
+    <a href="https://www.lemon8-app.com/@ashley_joyy/7547154939978613279?region=us" target="_blank" rel="noopener">Lemon8 Costa Rica</a>
+    <a href="https://www.tiktok.com/@ashlivesbyfaith/video/7547135773301083422" target="_blank" rel="noopener">TikTok</a>
+    <a href="https://getrawmilk.com/map/seguras-meat-market-uvita-puntarenas-costa-rica" target="_blank" rel="noopener">Raw Milk CR Directory</a>
+  </div>
+</aside>
 
 <main id="top">
 
@@ -1071,6 +1283,10 @@
 
         <div class="info-block">
           <h3>Hours</h3>
+          <span id="liveStatus" class="live-status closed" aria-live="polite">
+            <span class="pulse" aria-hidden="true"></span>
+            <span id="liveStatusText">Checking hours</span>
+          </span>
           <ul class="hours-list">
             <li><span class="day">Mon to Sat</span><span>9:00am to 6:00pm</span></li>
             <li><span class="day">Sunday</span><span class="closed">Closed</span></li>
@@ -1190,8 +1406,75 @@
   </div>
 </footer>
 
+<a class="fab-whatsapp"
+   href="https://wa.me/50685849777?text=Hola%20Seguras%2C%20I%27d%20like%20to%20place%20an%20order."
+   target="_blank" rel="noopener"
+   aria-label="Chat with Seguras Meat Market on WhatsApp">
+  <span class="fab-label">Chat on WhatsApp</span>
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+    <path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.7 2 6.7L4 29l7.5-2c1.9 1 4.1 1.6 6.4 1.6h.1c6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8h-.1c-2 0-4-.5-5.7-1.5l-.4-.2-4.4 1.2 1.2-4.3-.3-.4c-1.1-1.7-1.7-3.7-1.7-5.7 0-5.5 4.5-9.9 9.9-9.9 2.6 0 5.1 1 7 2.9 1.9 1.9 2.9 4.4 2.9 7 0 5.5-4.5 9.9-9.9 9.9zm5.4-7.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.1-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.2-.3-.3-.6-.4z"/>
+  </svg>
+</a>
+
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile menu toggle
+  (function () {
+    var btn = document.getElementById('menuToggle');
+    var panel = document.getElementById('mobilePanel');
+    if (!btn || !panel) return;
+    btn.addEventListener('click', function () {
+      var open = panel.getAttribute('data-open') === 'true';
+      panel.setAttribute('data-open', open ? 'false' : 'true');
+      btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+      btn.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
+    });
+    // Close panel when a link is tapped
+    panel.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        panel.setAttribute('data-open', 'false');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-label', 'Open menu');
+      });
+    });
+  })();
+
+  // Live open / closed status (Costa Rica is UTC-6, no DST)
+  (function () {
+    var status = document.getElementById('liveStatus');
+    var text = document.getElementById('liveStatusText');
+    if (!status || !text) return;
+
+    function update() {
+      var now = new Date();
+      // Convert to Costa Rica local time: UTC-6
+      var crNow = new Date(now.getTime() + (now.getTimezoneOffset() - 360) * 60000);
+      var day = crNow.getDay(); // 0=Sun ... 6=Sat
+      var minutes = crNow.getHours() * 60 + crNow.getMinutes();
+      var openMin = 9 * 60;
+      var closeMin = 18 * 60;
+      var isWeekday = day >= 1 && day <= 6; // Mon-Sat
+      var open = isWeekday && minutes >= openMin && minutes < closeMin;
+
+      status.classList.toggle('open', open);
+      status.classList.toggle('closed', !open);
+
+      if (open) {
+        text.textContent = 'Open now until 6pm';
+      } else if (isWeekday && minutes < openMin) {
+        text.textContent = 'Opens at 9am today';
+      } else if (day === 0) {
+        text.textContent = 'Closed Sunday. Opens Monday 9am';
+      } else {
+        // After hours weekday or Saturday after 6pm
+        var nextDay = day === 6 ? 'Monday' : 'tomorrow';
+        text.textContent = 'Closed. Opens ' + nextDay + ' 9am';
+      }
+    }
+    update();
+    setInterval(update, 60000);
+  })();
 </script>
 
 </body>

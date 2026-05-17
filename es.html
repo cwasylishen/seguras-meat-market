@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-CR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Seguras Meat Market | Grass-Fed Butcher Shop in Uvita, Costa Rica</title>
-  <meta name="description" content="Family-run butcher shop in Uvita, Costa Rica. 100% grass-fed beef, pasture-raised pork and chicken, raw cow and goat milk, artisan cheese, and real-food pantry staples. Free Tuesday delivery across Costa Ballena.">
-  <meta name="keywords" content="butcher Uvita, butcher shop Costa Rica, grass-fed beef Costa Rica, carniceria Uvita, raw milk Uvita, Seguras Meat Market, Dominical butcher, Ojochal butcher, Costa Ballena meat market, picanha Costa Rica">
+  <title>Seguras Meat Market | Carnicería de Res Alimentada con Pasto en Uvita, Costa Rica</title>
+  <meta name="description" content="Carnicería familiar en Uvita, Costa Rica. Res 100% alimentada con pasto, cerdo y pollo de pastoreo, leche cruda de vaca y de cabra, quesos artesanales y despensa real. Entrega gratis los martes en la Costa Ballena.">
+  <meta name="keywords" content="carnicería Uvita, carnicería Costa Rica, res alimentada con pasto, leche cruda Uvita, Seguras Meat Market, carnicería Dominical, carnicería Ojochal, carne grass-fed Costa Rica, picaña Costa Rica, mercado de carne Uvita">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://segurasmeatmarket.pages.dev/">
+  <link rel="canonical" href="https://segurasmeatmarket.pages.dev/es.html">
 
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://segurasmeatmarket.pages.dev/">
-  <meta property="og:title" content="Seguras Meat Market | Grass-Fed Butcher Shop in Uvita, Costa Rica">
-  <meta property="og:description" content="Family-run butcher shop in Uvita. 100% grass-fed beef, pasture-raised pork and chicken, raw dairy, and pantry staples for Costa Ballena. Free Tuesday delivery.">
+  <meta property="og:url" content="https://segurasmeatmarket.pages.dev/es.html">
+  <meta property="og:title" content="Seguras Meat Market | Carnicería en Uvita, Costa Rica">
+  <meta property="og:description" content="Carnicería familiar en Uvita. Res 100% alimentada con pasto, cerdo y pollo de pastoreo, lácteos crudos y despensa real para la Costa Ballena. Entrega gratis los martes.">
   <meta property="og:image" content="https://segurasmeatmarket.pages.dev/hero-desktop.webp">
   <meta property="og:image:width" content="1440">
   <meta property="og:image:height" content="960">
   <meta property="og:site_name" content="Seguras Meat Market">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:locale:alternate" content="es_CR">
+  <meta property="og:locale" content="es_CR">
+  <meta property="og:locale:alternate" content="en_US">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Seguras Meat Market | Uvita, Costa Rica">
-  <meta name="twitter:description" content="100% grass-fed beef, raw dairy, and real-food pantry staples from a family butcher shop in Uvita.">
+  <meta name="twitter:description" content="Res 100% alimentada con pasto, lácteos crudos y despensa real de una carnicería familiar en Uvita.">
   <meta name="twitter:image" content="https://segurasmeatmarket.pages.dev/hero-desktop.webp">
 
   <link rel="icon" type="image/png" href="logo-light.png">
@@ -31,30 +31,6 @@
   <link rel="alternate" hreflang="en" href="https://segurasmeatmarket.pages.dev/">
   <link rel="alternate" hreflang="es" href="https://segurasmeatmarket.pages.dev/es.html">
   <link rel="alternate" hreflang="x-default" href="https://segurasmeatmarket.pages.dev/">
-
-  <script>
-    // Auto-route Spanish browsers to /es.html on first visit, default English.
-    // No redirect if user previously chose a language explicitly.
-    (function () {
-      try {
-        var p = location.pathname;
-        if (p !== "/" && p.indexOf("/index") !== 0 && !p.endsWith("/index.html")) return;
-        var pref = localStorage.getItem("seguras_lang");
-        if (pref === "en") return;
-        if (pref === "es") { location.replace("/es.html"); return; }
-        var langs = navigator.languages || [navigator.language || ""];
-        for (var i = 0; i < langs.length; i++) {
-          var l = (langs[i] || "").toLowerCase();
-          if (l === "es" || l.indexOf("es-") === 0 || l.indexOf("es_") === 0) {
-            localStorage.setItem("seguras_lang", "es");
-            location.replace("/es.html");
-            return;
-          }
-          if (l.indexOf("en") === 0) return; // stop scanning: English preferred
-        }
-      } catch (e) {}
-    })();
-  </script>
 
   <style>
     .lang-switch {
@@ -84,6 +60,7 @@
       border-color: var(--neon);
     }
   </style>
+
   <link rel="stylesheet" href="styles.css">
 
   <script type="application/ld+json">
@@ -92,9 +69,9 @@
     "@type": "LocalBusiness",
     "@id": "https://segurasmeatmarket.pages.dev/#business",
     "name": "Seguras Meat Market",
-    "alternateName": ["Seguras Butcher", "Carniceria Seguras"],
-    "description": "Family-run butcher shop in Uvita, Costa Rica selling 100% grass-fed beef, pasture-raised pork and chicken, raw cow and goat milk, artisan cheese, and real-food pantry staples to Costa Ballena.",
-    "url": "https://segurasmeatmarket.pages.dev/",
+    "alternateName": ["Seguras Farm Shop", "Carnicería Seguras", "Seguras Butcher"],
+    "description": "Carnicería familiar en Uvita, Costa Rica que vende res 100% alimentada con pasto, cerdo y pollo de pastoreo, leche cruda de vaca y de cabra, quesos artesanales y despensa real para la Costa Ballena.",
+    "url": "https://segurasmeatmarket.pages.dev/es.html",
     "telephone": "+50670215929",
     "email": "Info@segurascr.com",
     "image": "https://segurasmeatmarket.pages.dev/hero-desktop.webp",
@@ -138,37 +115,38 @@
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "inLanguage": "es-CR",
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Where is Seguras Meat Market located?",
+        "name": "¿Dónde está Seguras Meat Market?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Seguras Meat Market is on Camino a Playa Colonia in Uvita, Puntarenas, Costa Rica. We serve customers across Costa Ballena including Dominical, Ojochal, and Bahia Ballena."
+          "text": "Nuestra carnicería está en Camino a Playa Colonia, en Uvita, Puntarenas, Costa Rica. Atendemos clientes en toda la Costa Ballena, incluyendo Dominical, Ojochal y Bahía Ballena."
         }
       },
       {
         "@type": "Question",
-        "name": "What does 100% grass-fed beef mean at Seguras?",
+        "name": "¿Qué significa res 100% alimentada con pasto en Seguras?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Our cattle are raised on Costa Rican pasture their whole lives. No grain finishing, no feedlots, no industrial shortcuts. The meat tastes the way beef is supposed to taste."
+          "text": "Nuestro ganado se cría en pasto costarricense toda su vida. Sin acabado de grano, sin corrales de engorde, sin atajos industriales. La carne sabe como la res debe saber."
         }
       },
       {
         "@type": "Question",
-        "name": "Do you deliver outside of Uvita?",
+        "name": "¿Entregan fuera de Uvita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. We deliver free of charge every Tuesday across the Uvita and Costa Ballena area. Place your order by Friday 11:59pm to make the next delivery run."
+          "text": "Sí. Entregamos sin costo todos los martes en toda la zona de Uvita y la Costa Ballena. Haga su pedido antes del viernes a las 11:59pm para la próxima entrega."
         }
       },
       {
         "@type": "Question",
-        "name": "Can I buy raw milk at Seguras Meat Market?",
+        "name": "¿Puedo comprar leche cruda en Seguras Meat Market?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. We stock raw cow milk and raw goat milk from local Costa Rican farms, plus heavy cream, half and half, Greek yogurt, and flavored raw yogurts."
+          "text": "Sí. Tenemos leche cruda de vaca y de cabra de fincas costarricenses locales, además de crema, media crema, yogurt griego y yogures crudos saborizados."
         }
       }
     ]
@@ -177,27 +155,27 @@
 </head>
 <body>
 
-<a class="skip-link" href="#top">Skip to content</a>
+<a class="skip-link" href="#top">Saltar al contenido</a>
 
 <header class="site-header">
   <div class="container inner">
-    <a href="#top" class="brand-link" aria-label="Seguras Meat Market home">
+    <a href="#top" class="brand-link" aria-label="Inicio de Seguras Meat Market">
       <img src="logo-dark.png" alt="Seguras Meat Market" class="brand-logo" width="180" height="40">
     </a>
-    <nav class="nav-links" aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#products">The Case</a>
-      <a href="#delivery">Delivery</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#visit">Visit</a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#about">Nosotros</a>
+      <a href="#products">La Vitrina</a>
+      <a href="#delivery">Entregas</a>
+      <a href="#reviews">Reseñas</a>
+      <a href="#visit">Visítenos</a>
     </nav>
-    <span class="lang-switch" role="group" aria-label="Language">
-      <a href="/" aria-current="true" onclick="try{localStorage.setItem('seguras_lang','en')}catch(e){}">EN</a>
-      <a href="/es.html" onclick="try{localStorage.setItem('seguras_lang','es')}catch(e){}">ES</a>
+    <span class="lang-switch" role="group" aria-label="Idioma">
+      <a href="/" onclick="try{localStorage.setItem('seguras_lang','en')}catch(e){}">EN</a>
+      <a href="/es.html" aria-current="true" onclick="try{localStorage.setItem('seguras_lang','es')}catch(e){}">ES</a>
     </span>
-    <a href="#visit" class="nav-cta">Order or Visit</a>
+    <a href="#visit" class="nav-cta">Pedir o Visitar</a>
     <button class="menu-toggle" id="menuToggle"
-            aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel">
+            aria-label="Abrir menú" aria-expanded="false" aria-controls="mobilePanel">
       <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
         <path d="M3 6h18M3 12h18M3 18h18"/>
       </svg>
@@ -208,23 +186,23 @@
   </div>
 </header>
 
-<nav id="mobilePanel" class="mobile-panel" aria-label="Mobile navigation" data-open="false">
-  <a href="#about">About</a>
-  <a href="#products">The Case</a>
-  <a href="#delivery">Delivery</a>
-  <a href="#reviews">Reviews</a>
-  <a href="#visit">Visit</a>
-  <a href="#faq">FAQ</a>
-  <a href="/es.html" onclick="try{localStorage.setItem('seguras_lang','es')}catch(e){}">Ver en Espa&ntilde;ol</a>
-  <a href="https://wa.me/50685849777" target="_blank" rel="noopener">WhatsApp Us</a>
+<nav id="mobilePanel" class="mobile-panel" aria-label="Navegación móvil" data-open="false">
+  <a href="#about">Nosotros</a>
+  <a href="#products">La Vitrina</a>
+  <a href="#delivery">Entregas</a>
+  <a href="#reviews">Reseñas</a>
+  <a href="#visit">Visítenos</a>
+  <a href="#faq">Preguntas</a>
+  <a href="/" onclick="try{localStorage.setItem('seguras_lang','en')}catch(e){}">View in English</a>
+  <a href="https://wa.me/50685849777" target="_blank" rel="noopener">Escríbanos por WhatsApp</a>
 </nav>
 
-<aside class="featured-strip" aria-label="Featured in">
+<aside class="featured-strip" aria-label="Apariciones">
   <div class="container inner">
-    <span class="label">As featured by</span>
+    <span class="label">Como se ve en</span>
     <a href="https://www.lemon8-app.com/@ashley_joyy/7547154939978613279?region=us" target="_blank" rel="noopener">Lemon8 Costa Rica</a>
     <a href="https://www.tiktok.com/@ashlivesbyfaith/video/7547135773301083422" target="_blank" rel="noopener">TikTok</a>
-    <a href="https://getrawmilk.com/map/seguras-meat-market-uvita-puntarenas-costa-rica" target="_blank" rel="noopener">Raw Milk CR Directory</a>
+    <a href="https://getrawmilk.com/map/seguras-meat-market-uvita-puntarenas-costa-rica" target="_blank" rel="noopener">Directorio de Leche Cruda CR</a>
   </div>
 </aside>
 
@@ -234,18 +212,18 @@
   <section class="hero" aria-labelledby="hero-title">
     <div class="container inner">
       <div class="hero-text">
-        <span class="hero-chip"><span class="dot" aria-hidden="true"></span> Nose-to-Tail Butchery. Uvita, Costa Rica.</span>
+        <span class="hero-chip"><span class="dot" aria-hidden="true"></span> Carnicería Nariz al Rabo. Uvita, Costa Rica.</span>
         <h1 id="hero-title">
           Meat the<br><span class="neon">future.</span>
         </h1>
         <p class="hero-sub">
-          A family butcher shop in Uvita, Costa Rica. We cut <strong>100% grass-fed beef</strong>, pasture-raised pork and chicken, and bottle raw cow and goat milk from farms we visit and know by name.
+          Una carnicería familiar en Uvita, Costa Rica. Cortamos <strong>res 100% alimentada con pasto</strong>, cerdo y pollo de pastoreo, y embotellamos leche cruda de vaca y de cabra de fincas que visitamos y conocemos por nombre.
         </p>
         <div class="hero-actions">
-          <a href="#products" class="btn btn-primary">See the Case</a>
-          <a href="#delivery" class="btn btn-ghost">Tuesday Delivery</a>
+          <a href="#products" class="btn btn-primary">Ver la Vitrina</a>
+          <a href="#delivery" class="btn btn-ghost">Entrega los Martes</a>
         </div>
-        <span class="nose-to-tail">Nose to Tail. Whole-Animal Butchery.</span>
+        <span class="nose-to-tail">De la Nariz al Rabo. Carnicería de Animal Entero.</span>
       </div>
 
       <div class="hero-image">
@@ -255,7 +233,7 @@
                   sizes="(min-width: 1200px) 540px, 50vw">
           <source type="image/webp" srcset="hero-mobile.webp 640w" sizes="100vw">
           <img src="hero-mobile.webp"
-               alt="Grass-fed t-bone steak on butcher paper with cast iron skillet, cleaver, rosemary, and spices"
+               alt="Ribeye alimentado con pasto sobre papel de carnicero con sartén de hierro, cuchilla, romero y especias"
                width="1440" height="960"
                loading="eager" decoding="async" fetchpriority="high">
         </picture>
@@ -264,15 +242,15 @@
       <div class="hero-stats" role="list">
         <div class="hero-stat" role="listitem">
           <span class="num">100%</span>
-          <span class="lbl">Grass-Fed Beef</span>
+          <span class="lbl">Alimentada con Pasto</span>
         </div>
         <div class="hero-stat" role="listitem">
-          <span class="num">Free</span>
-          <span class="lbl">Tuesday Delivery</span>
+          <span class="num">Gratis</span>
+          <span class="lbl">Entrega los Martes</span>
         </div>
         <div class="hero-stat" role="listitem">
-          <span class="num">Mon to Sat</span>
-          <span class="lbl">Open 9am to 6pm</span>
+          <span class="num">Lun a Sáb</span>
+          <span class="lbl">Abierto 9am a 6pm</span>
         </div>
       </div>
     </div>
@@ -283,56 +261,56 @@
     <div class="container">
       <div class="about-grid">
         <div>
-          <p class="eyebrow">About the Shop</p>
-          <h2 id="about-title">Better beef starts <span class="accent">at the pasture.</span></h2>
+          <p class="eyebrow">Sobre la Carnicería</p>
+          <h2 id="about-title">La mejor res empieza <span class="accent">en el pasto.</span></h2>
           <p class="about-lede">
-            Seguras Meat Market is a family-run carnicería in Uvita, Puntarenas. We sell beef cut from cattle raised on Costa Rican pasture their entire lives. No grain finishing. No feedlots. No surprise ingredients on the label.
+            Seguras Meat Market es una carnicería familiar en Uvita, Puntarenas. Vendemos res cortada de ganado criado en pasto costarricense toda su vida. Sin acabado de grano. Sin corrales de engorde. Sin ingredientes sorpresa en la etiqueta.
           </p>
           <p class="about-lede">
-            Families drive in from Dominical, Ojochal, Bahía, and across the Costa Ballena for our grass-fed ribeye, picanha, raw cow milk, and artisan butter. If you cook real food at home, you'll feel right at home here.
+            Familias vienen desde Dominical, Ojochal, Bahía y toda la Costa Ballena por nuestro ribeye alimentado con pasto, picaña, leche cruda de vaca y mantequilla artesanal. Si en su casa se cocina comida real, aquí se va a sentir en familia.
           </p>
           <p class="about-lede" style="font-style: italic; color: var(--oxblood); font-weight: 600;">
-            We work nose to tail. Every animal we cut is used in full.
+            Trabajamos de la nariz al rabo. Cada animal que cortamos se aprovecha por completo.
           </p>
         </div>
         <div class="about-feature">
           <picture>
             <source type="image/webp" media="(min-width: 900px)" srcset="craft-md.webp">
             <img src="craft-sm.webp"
-                 alt="Seguras butcher hand-rolling grass-fed beef meatballs over a plate marked with the Seguras Nose to Tail logo"
+                 alt="Carnicero de Seguras formando albóndigas de res alimentada con pasto sobre un plato con el logo Nariz al Rabo de Seguras"
                  width="900" height="1169" loading="lazy" decoding="async">
           </picture>
         </div>
       </div>
 
-      <div class="pillars" aria-label="What sets us apart" style="margin-top: clamp(28px, 5vw, 56px);">
+      <div class="pillars" aria-label="Lo que nos distingue" style="margin-top: clamp(28px, 5vw, 56px);">
           <div class="pillar">
             <span class="pillar-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L4 8 v8 l8 6 8-6 V8 Z"/><path d="M12 22 V11"/><path d="M4 8 l8 3 8-3"/></svg>
             </span>
-            <h3>100% Grass-Fed Beef</h3>
-            <p>Cattle raised on Costa Rican pasture their whole lives. No grain finishing.</p>
+            <h3>100% Alimentada con Pasto</h3>
+            <p>Ganado criado en pasto costarricense toda su vida. Sin acabado de grano.</p>
           </div>
           <div class="pillar">
             <span class="pillar-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c4-8 14-8 18 0"/><path d="M3 12c4 8 14 8 18 0"/><circle cx="12" cy="12" r="2.5"/></svg>
             </span>
-            <h3>From Local Farms</h3>
-            <p>We source from farms we visit. Real names, real fields, real care.</p>
+            <h3>De Fincas Locales</h3>
+            <p>Compramos a fincas que visitamos. Nombres reales, campos reales, cuidado real.</p>
           </div>
           <div class="pillar">
             <span class="pillar-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 8c2 2 5 2 7 0s5-2 7 0"/><path d="M5 16c2 2 5 2 7 0s5-2 7 0"/></svg>
             </span>
-            <h3>Family Run</h3>
-            <p>An independent Costa Rican shop run by people who know butchery from packaging.</p>
+            <h3>Negocio Familiar</h3>
+            <p>Una carnicería costarricense independiente, dirigida por gente que conoce la diferencia entre carnicería y empaque.</p>
           </div>
           <div class="pillar">
             <span class="pillar-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><circle cx="12" cy="13" r="6"/><path d="M9 13h6"/><path d="M12 10v6"/></svg>
             </span>
-            <h3>Real-Food Pantry</h3>
-            <p>Raw milk, artisan butter, bone broth, tallow, and ghee. The basics, done right.</p>
+            <h3>Despensa Real</h3>
+            <p>Leche cruda, mantequilla artesanal, caldo de huesos, sebo y ghee. Lo básico, bien hecho.</p>
           </div>
       </div>
     </div>
@@ -343,17 +321,17 @@
     <div class="container">
       <div class="products-head-grid">
         <div>
-          <p class="eyebrow on-dark">In the Case</p>
-          <h2 id="products-title">What's <span class="accent">on the block.</span></h2>
+          <p class="eyebrow on-dark">En la Vitrina</p>
+          <h2 id="products-title">Lo que hay <span class="accent">en la tabla.</span></h2>
           <p style="color: var(--paper-muted); font-size: 1.05rem; max-width: 60ch;">
-            A working butcher case in Uvita stocked with the cuts and staples we feed our own families. Selection rotates with the farm. Message us on Facebook, Instagram, or WhatsApp for today's availability.
+            Una vitrina de carnicería en Uvita con los cortes y básicos que comen nuestras propias familias. La selección rota según la finca. Escríbanos por Facebook, Instagram o WhatsApp para ver lo del día.
           </p>
         </div>
         <div class="products-image">
           <picture>
             <source type="image/webp" media="(min-width: 900px)" srcset="cuts-md.webp">
             <img src="cuts-sm.webp"
-                 alt="Overhead view of grass-fed beef and pasture-raised pork cuts on a Seguras butcher tray with fresh herbs and vegetables"
+                 alt="Vista aérea de cortes de res alimentada con pasto y cerdo de pastoreo en una bandeja de carnicería Seguras con hierbas frescas y vegetales"
                  width="900" height="1169" loading="lazy" decoding="async">
           </picture>
         </div>
@@ -364,10 +342,10 @@
           <span class="product-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11c1-3 4-5 8-5s7 2 8 5c.6 1.8.2 3.6-1 5l-2 2c-1 1-2.5 1.4-4 1H9c-1.5.4-3 0-4-1l-2-2c-1.2-1.4-1.6-3.2-1-5Z"/><circle cx="8" cy="11" r="1"/><circle cx="16" cy="11" r="1"/></svg>
           </span>
-          <h3>Grass-Fed Beef</h3>
-          <p>Ribeye, picanha, ground beef, and roasts from cattle raised on Costa Rican pasture.</p>
-          <ul aria-label="Beef cuts">
-            <li>Ribeye</li><li>Picanha</li><li>Ground</li><li>Roasts</li>
+          <h3>Res Alimentada con Pasto</h3>
+          <p>Ribeye, picaña, molida y asados de ganado criado en pasto costarricense.</p>
+          <ul aria-label="Cortes de res">
+            <li>Ribeye</li><li>Picaña</li><li>Molida</li><li>Asados</li>
           </ul>
         </article>
 
@@ -375,10 +353,10 @@
           <span class="product-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8c0-2 2-4 4-4h4c2 0 4 2 4 4v2c0 1-1 2-2 2h-1v6c0 1-1 2-2 2h-2c-1 0-2-1-2-2v-6H8c-1 0-2-1-2-2Z"/></svg>
           </span>
-          <h3>Pork &amp; Chicken</h3>
-          <p>Pasture-raised pork and chicken from local farms, butchered in our Uvita shop.</p>
-          <ul aria-label="Pork and chicken">
-            <li>Whole birds</li><li>Cuts</li><li>Sausage</li>
+          <h3>Cerdo y Pollo</h3>
+          <p>Cerdo y pollo de pastoreo de fincas locales, despresados en nuestra carnicería en Uvita.</p>
+          <ul aria-label="Cerdo y pollo">
+            <li>Aves enteras</li><li>Cortes</li><li>Embutidos</li>
           </ul>
         </article>
 
@@ -386,10 +364,10 @@
           <span class="product-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h8l1 4c0 1.5-2 3-5 3s-5-1.5-5-3l1-4Z"/><path d="M7 10v9c0 1 1 2 2 2h6c1 0 2-1 2-2v-9"/></svg>
           </span>
-          <h3>Raw Dairy</h3>
-          <p>Raw cow milk, raw goat milk, heavy cream, half and half, plus Greek and flavored raw yogurts.</p>
-          <ul aria-label="Dairy">
-            <li>Raw milk</li><li>Goat milk</li><li>Yogurt</li><li>Cream</li>
+          <h3>Lácteos Crudos</h3>
+          <p>Leche cruda de vaca, leche cruda de cabra, crema, media crema, más yogures griego y saborizados.</p>
+          <ul aria-label="Lácteos">
+            <li>Leche cruda</li><li>Leche de cabra</li><li>Yogurt</li><li>Crema</li>
           </ul>
         </article>
 
@@ -397,10 +375,10 @@
           <span class="product-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12 12 4l9 8v8H3z"/><circle cx="9" cy="14" r="1"/><circle cx="15" cy="16" r="1"/><circle cx="12" cy="11" r="1"/></svg>
           </span>
-          <h3>Cheese &amp; Pantry</h3>
-          <p>Herb cheddar, cotija, mozzarella, plus artisan butter, ghee, lard, tallow, and bone broth.</p>
-          <ul aria-label="Pantry">
-            <li>Cheese</li><li>Butter</li><li>Bone broth</li><li>Tallow</li>
+          <h3>Quesos y Despensa</h3>
+          <p>Cheddar a las hierbas, cotija, mozzarella, más mantequilla artesanal, ghee, manteca, sebo y caldo de huesos.</p>
+          <ul aria-label="Despensa">
+            <li>Quesos</li><li>Mantequilla</li><li>Caldo de huesos</li><li>Sebo</li>
           </ul>
         </article>
       </div>
@@ -411,56 +389,56 @@
   <section id="delivery" class="section-cream-2" aria-labelledby="delivery-title">
     <div class="container">
       <div class="section-head">
-        <p class="eyebrow">Free Weekly Delivery</p>
-        <h2 id="delivery-title">Order Friday. <span class="accent">We deliver Tuesday.</span></h2>
+        <p class="eyebrow">Entrega Semanal Gratis</p>
+        <h2 id="delivery-title">Pedidos el viernes. <span class="accent">Entrega el martes.</span></h2>
         <p style="color: var(--ink-muted); font-size: 1.05rem; max-width: 56ch;">
-          We do one delivery run a week across Uvita, Dominical, Ojochal, and the Costa Ballena. It is free for our customers.
+          Hacemos una entrega por semana en Uvita, Dominical, Ojochal y toda la Costa Ballena. Es gratis para nuestros clientes.
         </p>
       </div>
 
       <div class="delivery">
         <div class="delivery-card">
-          <p style="margin: 0 0 6px; font-weight: 700;">How it works</p>
+          <p style="margin: 0 0 6px; font-weight: 700;">Cómo funciona</p>
           <ol class="delivery-steps">
             <li>
               <div>
-                <strong>Send your order by Friday 11:59pm.</strong><br>
-                <span style="color: var(--ink-muted); font-size: 0.95rem;">Message us on Facebook, Instagram, or WhatsApp.</span>
+                <strong>Envíe su pedido antes del viernes a las 11:59pm.</strong><br>
+                <span style="color: var(--ink-muted); font-size: 0.95rem;">Escríbanos por Facebook, Instagram o WhatsApp.</span>
               </div>
             </li>
             <li>
               <div>
-                <strong>We cut and pack it Monday.</strong><br>
-                <span style="color: var(--ink-muted); font-size: 0.95rem;">Sealed cold, labeled, and ready.</span>
+                <strong>Cortamos y empacamos el lunes.</strong><br>
+                <span style="color: var(--ink-muted); font-size: 0.95rem;">Sellado en frío, etiquetado y listo.</span>
               </div>
             </li>
             <li>
               <div>
-                <strong>Tuesday delivery to your door.</strong><br>
-                <span style="color: var(--ink-muted); font-size: 0.95rem;">Free anywhere in our Costa Ballena delivery zone.</span>
+                <strong>Entrega a domicilio el martes.</strong><br>
+                <span style="color: var(--ink-muted); font-size: 0.95rem;">Gratis en toda nuestra zona de la Costa Ballena.</span>
               </div>
             </li>
           </ol>
 
-          <p style="margin-top: 22px; font-weight: 700;">Service area</p>
-          <ul class="area-list" aria-label="Towns we deliver to">
+          <p style="margin-top: 22px; font-weight: 700;">Zona de Entrega</p>
+          <ul class="area-list" aria-label="Pueblos donde entregamos">
             <li>Uvita</li>
-            <li>Bahia Ballena</li>
+            <li>Bahía Ballena</li>
             <li>Dominical</li>
             <li>Ojochal</li>
-            <li>Cortes</li>
+            <li>Cortés</li>
             <li>Playa Hermosa</li>
           </ul>
         </div>
 
         <aside class="delivery-aside">
-          <h3>Delivery Day</h3>
-          <div class="big-day" aria-hidden="true">Tuesday</div>
-          <p class="cutoff">Order cutoff: <strong style="color: var(--paper);">Friday 11:59pm</strong></p>
+          <h3>Día de Entrega</h3>
+          <div class="big-day" aria-hidden="true">Martes</div>
+          <p class="cutoff">Cierre de pedidos: <strong style="color: var(--paper);">viernes 11:59pm</strong></p>
           <p style="color: var(--paper-muted); font-size: 0.95rem; margin-top: 18px;">
-            Outside the delivery zone? Stop in at the shop. We're easy to find.
+            ¿Está fuera de la zona de entrega? Pase por la carnicería. Es fácil encontrarnos.
           </p>
-          <a href="#visit" class="btn btn-primary" style="margin-top: 8px;">Get In Touch</a>
+          <a href="#visit" class="btn btn-primary" style="margin-top: 8px;">Contáctenos</a>
         </aside>
       </div>
     </div>
@@ -470,16 +448,16 @@
   <section id="visit" class="section-dark" aria-labelledby="visit-title">
     <div class="container">
       <div class="section-head">
-        <p class="eyebrow on-dark">Visit the Shop</p>
-        <h2 id="visit-title">Stop by <span class="accent">the shop.</span></h2>
+        <p class="eyebrow on-dark">Visite la Carnicería</p>
+        <h2 id="visit-title">Pase por <span class="accent">la tienda.</span></h2>
         <p style="color: var(--paper-muted); font-size: 1.05rem; max-width: 56ch;">
-          Drop in and pick something for tonight. We'll walk you through cuts, cooking, and what's freshest in the case.
+          Pase y escoja algo para esta noche. Le ayudamos con los cortes, las recetas y lo más fresco de la vitrina.
         </p>
       </div>
 
       <div class="visit-grid">
         <div class="info-block">
-          <h3>Find Us</h3>
+          <h3>Cómo Llegar</h3>
           <p>
             Camino a Playa Colonia<br>
             Uvita, Puntarenas<br>
@@ -487,25 +465,25 @@
           </p>
           <a class="btn btn-primary" style="margin-top: 14px;"
              href="https://www.google.com/maps/search/?api=1&query=Seguras+Meat+Market+Uvita+Costa+Rica"
-             target="_blank" rel="noopener">Open in Google Maps</a>
+             target="_blank" rel="noopener">Abrir en Google Maps</a>
         </div>
 
         <div class="info-block">
-          <h3>Hours</h3>
+          <h3>Horario</h3>
           <span id="liveStatus" class="live-status closed" aria-live="polite">
             <span class="pulse" aria-hidden="true"></span>
-            <span id="liveStatusText">Checking hours</span>
+            <span id="liveStatusText">Verificando horario</span>
           </span>
           <ul class="hours-list">
-            <li><span class="day">Mon to Sat</span><span>9:00am to 6:00pm</span></li>
-            <li><span class="day">Sunday</span><span class="closed">Closed</span></li>
+            <li><span class="day">Lun a Sáb</span><span>9:00am a 6:00pm</span></li>
+            <li><span class="day">Domingo</span><span class="closed">Cerrado</span></li>
           </ul>
         </div>
 
         <div class="info-block">
-          <h3>Get In Touch</h3>
+          <h3>Contáctenos</h3>
           <p style="margin-bottom: 6px;">
-            <span style="color: var(--paper-muted); font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase;">Phone</span><br>
+            <span style="color: var(--paper-muted); font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase;">Teléfono</span><br>
             <a href="tel:+50670215929">+506 7021 5929</a>
           </p>
           <p style="margin-bottom: 6px;">
@@ -513,22 +491,22 @@
             <a href="tel:+50685849777">+506 8584 9777</a>
           </p>
           <p>
-            <span style="color: var(--paper-muted); font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase;">Email</span><br>
+            <span style="color: var(--paper-muted); font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase;">Correo</span><br>
             <a href="mailto:Info@segurascr.com">Info@segurascr.com</a>
           </p>
         </div>
 
         <div class="info-block">
-          <h3>Follow Along</h3>
+          <h3>Síganos en Redes</h3>
           <p style="color: var(--paper-muted); font-size: 0.95rem; margin-bottom: 4px;">
-            New cuts, market updates, and behind-the-counter looks.
+            Cortes nuevos, novedades del mercado y vistazos detrás del mostrador.
           </p>
           <div class="socials">
-            <a class="social-link" href="https://www.facebook.com/segurasbutcher/" target="_blank" rel="noopener" aria-label="Seguras Meat Market on Facebook">
+            <a class="social-link" href="https://www.facebook.com/segurasbutcher/" target="_blank" rel="noopener" aria-label="Seguras Meat Market en Facebook">
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 22v-8h3l1-4h-4V7c0-1 .5-2 2-2h2V1.5C16.5 1.4 15.3 1 14 1c-2.8 0-5 1.7-5 5v3H6v4h3v8h4Z"/></svg>
               Facebook
             </a>
-            <a class="social-link" href="https://www.instagram.com/segurasmeatmarket/" target="_blank" rel="noopener" aria-label="Seguras Meat Market on Instagram">
+            <a class="social-link" href="https://www.instagram.com/segurasmeatmarket/" target="_blank" rel="noopener" aria-label="Seguras Meat Market en Instagram">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
               Instagram
             </a>
@@ -543,79 +521,74 @@
     <div class="container">
       <div class="reviews-head">
         <div>
-          <p class="eyebrow">What people say</p>
-          <h2 id="reviews-title">Loved by neighbors <span class="accent">and visitors.</span></h2>
+          <p class="eyebrow">Lo que dicen los clientes</p>
+          <h2 id="reviews-title">Querido por vecinos <span class="accent">y visitantes.</span></h2>
           <p style="color: var(--ink-muted); font-size: 1.05rem; max-width: 52ch; margin: 0;">
-            A small shop, big reputation. Read what customers are saying on Google, then come taste the difference yourself.
+            Una carnicería pequeña con gran reputación. Lea lo que dicen los clientes en Google y luego venga a probar la diferencia.
           </p>
         </div>
-        <a class="google-badge" href="https://share.google/Viwe4Wsbm6VkJ2ibr" target="_blank" rel="noopener" aria-label="See Seguras Farm Shop on Google — 4.9 stars from 50 reviews">
+        <a class="google-badge" href="https://share.google/Viwe4Wsbm6VkJ2ibr" target="_blank" rel="noopener" aria-label="Ver Seguras Farm Shop en Google. 4.9 estrellas de 50 reseñas">
           <span class="g-mark" aria-hidden="true">
             <svg viewBox="0 0 48 48"><path fill="#4285F4" d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.4-5.8 7.5-11.3 7.5-6.6 0-12-5.4-12-12s5.4-12 12-12c3 0 5.8 1.1 7.9 3l5.7-5.7C34 5.1 29.3 3 24 3 12.4 3 3 12.4 3 24s9.4 21 21 21 20.5-9 20.5-21c0-1.2-.1-2.4-.4-3.5z"/><path fill="#34A853" d="M6.3 14.7l6.6 4.8C14.6 16 19 13 24 13c3 0 5.8 1.1 7.9 3l5.7-5.7C34 5.1 29.3 3 24 3 16 3 9 7.5 6.3 14.7z"/><path fill="#FBBC05" d="M24 45c5.2 0 9.9-1.9 13.5-5.1l-6.2-5.2c-2 1.4-4.6 2.3-7.3 2.3-5.4 0-10-3.4-11.6-8.1l-6.6 5C8.7 40.5 15.8 45 24 45z"/><path fill="#EA4335" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.1-2.2 4-4 5.4l6.2 5.2c-.4.4 6.6-4.8 6.6-14.6 0-1.2-.1-2.4-.5-3.5z"/></svg>
           </span>
           <span class="g-stat">
             <span class="g-rating">4.9 <span class="g-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span>
-            <span class="g-meta">50 Google Reviews</span>
+            <span class="g-meta">50 Reseñas en Google</span>
           </span>
         </a>
       </div>
 
       <div class="reviews-rail-wrap">
-        <div class="reviews-rail" role="list" aria-label="Customer reviews">
-          <!-- REAL ATTRIBUTED QUOTE - Lemon8 feature -->
+        <div class="reviews-rail" role="list" aria-label="Reseñas de clientes">
           <article class="review-card" role="listitem">
-            <span class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            <p class="review-body">A premium destination for ethically-sourced animal products. Cool, modern vibe. The neon cow sign reading "Meat the Future" creates a cool, modern energy despite the traditional butchery focus.</p>
+            <span class="review-stars" aria-label="5 estrellas de 5">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <p class="review-body">Un destino premium para productos animales de origen ético. Ambiente cool y moderno. El letrero de neón en forma de vaca que dice "Meat the Future" le da un aire moderno y fresco sin dejar atrás la tradición carnicera.</p>
             <div class="review-footer">
               <span class="review-author">Ashley Joy</span>
               <span class="review-source">Lemon8 Costa Rica</span>
             </div>
           </article>
 
-          <!-- TODO: paste real Google review #1 here -->
           <article class="review-card" role="listitem">
-            <span class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            <p class="review-body">[Owner: paste a real Google review here, then update the name and remove this note.]</p>
+            <span class="review-stars" aria-label="5 estrellas de 5">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <p class="review-body">[Dueño: pegue una reseña real de Google aquí, luego actualice el nombre y elimine esta nota.]</p>
             <div class="review-footer">
-              <span class="review-author">Customer name</span>
-              <span class="review-source">Google Review</span>
+              <span class="review-author">Nombre del cliente</span>
+              <span class="review-source">Reseña de Google</span>
             </div>
           </article>
 
-          <!-- TODO: paste real Google review #2 here -->
           <article class="review-card" role="listitem">
-            <span class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            <p class="review-body">[Owner: paste a real Google review here, then update the name and remove this note.]</p>
+            <span class="review-stars" aria-label="5 estrellas de 5">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <p class="review-body">[Dueño: pegue una reseña real de Google aquí, luego actualice el nombre y elimine esta nota.]</p>
             <div class="review-footer">
-              <span class="review-author">Customer name</span>
-              <span class="review-source">Google Review</span>
+              <span class="review-author">Nombre del cliente</span>
+              <span class="review-source">Reseña de Google</span>
             </div>
           </article>
 
-          <!-- TODO: paste real Google review #3 here -->
           <article class="review-card" role="listitem">
-            <span class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            <p class="review-body">[Owner: paste a real Google review here, then update the name and remove this note.]</p>
+            <span class="review-stars" aria-label="5 estrellas de 5">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <p class="review-body">[Dueño: pegue una reseña real de Google aquí, luego actualice el nombre y elimine esta nota.]</p>
             <div class="review-footer">
-              <span class="review-author">Customer name</span>
-              <span class="review-source">Google Review</span>
+              <span class="review-author">Nombre del cliente</span>
+              <span class="review-source">Reseña de Google</span>
             </div>
           </article>
 
-          <!-- TODO: paste real Google review #4 here -->
           <article class="review-card" role="listitem">
-            <span class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            <p class="review-body">[Owner: paste a real Google review here, then update the name and remove this note.]</p>
+            <span class="review-stars" aria-label="5 estrellas de 5">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <p class="review-body">[Dueño: pegue una reseña real de Google aquí, luego actualice el nombre y elimine esta nota.]</p>
             <div class="review-footer">
-              <span class="review-author">Customer name</span>
-              <span class="review-source">Google Review</span>
+              <span class="review-author">Nombre del cliente</span>
+              <span class="review-source">Reseña de Google</span>
             </div>
           </article>
         </div>
       </div>
 
       <a class="reviews-cta" href="https://share.google/Viwe4Wsbm6VkJ2ibr" target="_blank" rel="noopener">
-        Read all 50 reviews on Google &rarr;
+        Lea las 50 reseñas en Google &rarr;
       </a>
     </div>
   </section>
@@ -624,25 +597,25 @@
   <section id="faq" class="section-light" aria-labelledby="faq-title">
     <div class="container">
       <div class="section-head">
-        <p class="eyebrow">Common Questions</p>
-        <h2 id="faq-title">Things people <span class="accent">ask us.</span></h2>
+        <p class="eyebrow">Preguntas Frecuentes</p>
+        <h2 id="faq-title">Lo que la gente <span class="accent">nos pregunta.</span></h2>
       </div>
       <div class="faq-list">
         <article class="faq-item">
-          <h3>Where is Seguras Meat Market located?</h3>
-          <p>Our shop is on Camino a Playa Colonia in Uvita, Puntarenas, Costa Rica. We serve customers across Costa Ballena including Dominical, Ojochal, and Bahia Ballena.</p>
+          <h3>¿Dónde está Seguras Meat Market?</h3>
+          <p>Nuestra carnicería está en Camino a Playa Colonia, en Uvita, Puntarenas, Costa Rica. Atendemos clientes en toda la Costa Ballena, incluyendo Dominical, Ojochal y Bahía Ballena.</p>
         </article>
         <article class="faq-item">
-          <h3>What does 100% grass-fed beef mean at Seguras?</h3>
-          <p>Our cattle are raised on Costa Rican pasture their whole lives. No grain finishing, no feedlots, no industrial shortcuts. The meat tastes the way beef is supposed to taste.</p>
+          <h3>¿Qué significa res 100% alimentada con pasto en Seguras?</h3>
+          <p>Nuestro ganado se cría en pasto costarricense toda su vida. Sin acabado de grano, sin corrales de engorde, sin atajos industriales. La carne sabe como la res debe saber.</p>
         </article>
         <article class="faq-item">
-          <h3>Do you deliver outside of Uvita?</h3>
-          <p>Yes. We deliver free of charge every Tuesday across the Uvita and Costa Ballena area. Place your order by Friday 11:59pm to make the next delivery run.</p>
+          <h3>¿Entregan fuera de Uvita?</h3>
+          <p>Sí. Entregamos sin costo todos los martes en toda la zona de Uvita y la Costa Ballena. Haga su pedido antes del viernes a las 11:59pm para la próxima entrega.</p>
         </article>
         <article class="faq-item">
-          <h3>Can I buy raw milk at Seguras Meat Market?</h3>
-          <p>Yes. We stock raw cow milk and raw goat milk from local Costa Rican farms, plus heavy cream, half and half, Greek yogurt, and flavored raw yogurts.</p>
+          <h3>¿Puedo comprar leche cruda en Seguras Meat Market?</h3>
+          <p>Sí. Tenemos leche cruda de vaca y de cabra de fincas costarricenses locales, además de crema, media crema, yogurt griego y yogures crudos saborizados.</p>
         </article>
       </div>
     </div>
@@ -651,10 +624,10 @@
   <!-- CLOSING BAND -->
   <section class="closing-band" aria-labelledby="closing-title">
     <div class="container">
-      <p class="eyebrow" style="color: var(--gold);">Carnicería Uvita. Nose to Tail.</p>
-      <h2 id="closing-title">Better meat, <br>right in town.</h2>
-      <p>Visit Seguras in Uvita, or order ahead for free Tuesday delivery across the Costa Ballena.</p>
-      <a href="#visit" class="btn btn-dark">Get Directions</a>
+      <p class="eyebrow" style="color: var(--gold);">Carnicería Uvita. De la Nariz al Rabo.</p>
+      <h2 id="closing-title">Mejor carne, <br>aquí mismo en el pueblo.</h2>
+      <p>Visite Seguras en Uvita, o haga su pedido para entrega gratis los martes en toda la Costa Ballena.</p>
+      <a href="#visit" class="btn btn-dark">Cómo Llegar</a>
     </div>
   </section>
 
@@ -664,23 +637,24 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand-block">
-        <a href="#top" class="brand-link" aria-label="Seguras Meat Market home">
+        <a href="#top" class="brand-link" aria-label="Inicio de Seguras Meat Market">
           <img src="logo-dark.png" alt="Seguras Meat Market" class="brand-logo" width="200" height="44" loading="lazy">
         </a>
-        <p>Family-run butcher shop in Uvita, Puntarenas. 100% grass-fed beef, raw dairy, and pantry staples for Costa Ballena.</p>
+        <p>Carnicería familiar en Uvita, Puntarenas. Res 100% alimentada con pasto, lácteos crudos y despensa real para la Costa Ballena.</p>
       </div>
       <div>
         <h3>Explore</h3>
         <ul>
-          <li><a href="#about">About the Shop</a></li>
-          <li><a href="#products">The Case</a></li>
-          <li><a href="#delivery">Delivery</a></li>
-          <li><a href="#visit">Visit</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#about">Sobre Nosotros</a></li>
+          <li><a href="#products">La Vitrina</a></li>
+          <li><a href="#delivery">Entregas</a></li>
+          <li><a href="#reviews">Reseñas</a></li>
+          <li><a href="#visit">Visítenos</a></li>
+          <li><a href="#faq">Preguntas</a></li>
         </ul>
       </div>
       <div>
-        <h3>Contact</h3>
+        <h3>Contacto</h3>
         <ul>
           <li><a href="tel:+50670215929">+506 7021 5929</a></li>
           <li><a href="tel:+50685849777">WhatsApp +506 8584 9777</a></li>
@@ -691,17 +665,17 @@
       </div>
     </div>
     <div class="footer-bar">
-      <p>&copy; <span id="year">2026</span> Seguras Meat Market. All rights reserved.</p>
+      <p>&copy; <span id="year">2026</span> Seguras Meat Market. Todos los derechos reservados.</p>
       <p>Uvita, Puntarenas. Costa Rica.</p>
     </div>
   </div>
 </footer>
 
 <a class="fab-whatsapp"
-   href="https://wa.me/50685849777?text=Hola%20Seguras%2C%20I%27d%20like%20to%20place%20an%20order."
+   href="https://wa.me/50685849777?text=Hola%20Seguras%2C%20quisiera%20hacer%20un%20pedido."
    target="_blank" rel="noopener"
-   aria-label="Chat with Seguras Meat Market on WhatsApp">
-  <span class="fab-label">Chat on WhatsApp</span>
+   aria-label="Escríbanos por WhatsApp">
+  <span class="fab-label">Escríbanos por WhatsApp</span>
   <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
     <path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.7 2 6.7L4 29l7.5-2c1.9 1 4.1 1.6 6.4 1.6h.1c6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8h-.1c-2 0-4-.5-5.7-1.5l-.4-.2-4.4 1.2 1.2-4.3-.3-.4c-1.1-1.7-1.7-3.7-1.7-5.7 0-5.5 4.5-9.9 9.9-9.9 2.6 0 5.1 1 7 2.9 1.9 1.9 2.9 4.4 2.9 7 0 5.5-4.5 9.9-9.9 9.9zm5.4-7.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.1-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.2-.3-.3-.6-.4z"/>
   </svg>
@@ -719,14 +693,13 @@
       var open = panel.getAttribute('data-open') === 'true';
       panel.setAttribute('data-open', open ? 'false' : 'true');
       btn.setAttribute('aria-expanded', open ? 'false' : 'true');
-      btn.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
+      btn.setAttribute('aria-label', open ? 'Abrir menú' : 'Cerrar menú');
     });
-    // Close panel when a link is tapped
     panel.querySelectorAll('a').forEach(function (a) {
       a.addEventListener('click', function () {
         panel.setAttribute('data-open', 'false');
         btn.setAttribute('aria-expanded', 'false');
-        btn.setAttribute('aria-label', 'Open menu');
+        btn.setAttribute('aria-label', 'Abrir menú');
       });
     });
   })();
@@ -739,28 +712,26 @@
 
     function update() {
       var now = new Date();
-      // Convert to Costa Rica local time: UTC-6
       var crNow = new Date(now.getTime() + (now.getTimezoneOffset() - 360) * 60000);
-      var day = crNow.getDay(); // 0=Sun ... 6=Sat
+      var day = crNow.getDay();
       var minutes = crNow.getHours() * 60 + crNow.getMinutes();
       var openMin = 9 * 60;
       var closeMin = 18 * 60;
-      var isWeekday = day >= 1 && day <= 6; // Mon-Sat
+      var isWeekday = day >= 1 && day <= 6;
       var open = isWeekday && minutes >= openMin && minutes < closeMin;
 
       status.classList.toggle('open', open);
       status.classList.toggle('closed', !open);
 
       if (open) {
-        text.textContent = 'Open now until 6pm';
+        text.textContent = 'Abierto hasta las 6pm';
       } else if (isWeekday && minutes < openMin) {
-        text.textContent = 'Opens at 9am today';
+        text.textContent = 'Abre hoy a las 9am';
       } else if (day === 0) {
-        text.textContent = 'Closed Sunday. Opens Monday 9am';
+        text.textContent = 'Cerrado domingo. Abre el lunes 9am';
       } else {
-        // After hours weekday or Saturday after 6pm
-        var nextDay = day === 6 ? 'Monday' : 'tomorrow';
-        text.textContent = 'Closed. Opens ' + nextDay + ' 9am';
+        var nextDay = day === 6 ? 'el lunes' : 'mañana';
+        text.textContent = 'Cerrado. Abre ' + nextDay + ' 9am';
       }
     }
     update();

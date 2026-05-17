@@ -1,3 +1,15 @@
+# CSS: 7 days (so updates roll out within a week)
+/styles.css
+  Cache-Control: public, max-age=604800
+
+# Images: 30 days
+/*.webp
+  Cache-Control: public, max-age=2592000
+/*.png
+  Cache-Control: public, max-age=2592000
+/*.jpg
+  Cache-Control: public, max-age=2592000
+
 # HTML: 1 hour cache
 /*.html
   Cache-Control: public, max-age=3600, must-revalidate

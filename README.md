@@ -32,7 +32,7 @@ This regenerates the responsive WebP variants and the transparent logo PNGs.
 ## Contact (business)
 
 - Phone: +506 7021 5929
-- WhatsApp: +506 8584 9777
+- WhatsApp: +506 8401 9333
 - Email: Info@segurascr.com
 - Facebook: https://www.facebook.com/segurasbutcher/
 - Instagram: https://www.instagram.com/segurasmeatmarket/
